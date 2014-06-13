@@ -9,7 +9,7 @@ require.config({
         angular: 'components/angular/angular',
         angularRoute: 'components/angular-route/angular-route',
         routeResolver : 'resources/core/routeResolver',
-        ocLazyLoad : 'resources/core/ocLazyLoad',
+        ocLazyLoad : 'components/ocLazyLoad/dist/ocLazyLoad',
         app : 'app'
     },
     shim:{
