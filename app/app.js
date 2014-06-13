@@ -1,4 +1,4 @@
-define(function () {
+define(['angular'], function () {
     /**
      * configure the main app module
      * @type {*|module}

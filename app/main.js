@@ -6,15 +6,27 @@
 require.config({
 
     paths: {
-        'angular': 'components/angular/angular.min',
-        'angular-route': 'components/angular-route/angular-route.min',
-        'route-resolver' : 'resources/core/routeResolver',
-        'oc-lazy-load' : 'resources/core/ocLazyLoad',
-        'app' : 'app'
+        angular: 'components/angular/angular',
+        angularRoute: 'components/angular-route/angular-route',
+        routeResolver : 'resources/core/routeResolver',
+        ocLazyLoad : 'components/ocLazyLoad/dist/ocLazyLoad',
+        app : 'app'
+    },
+    shim:{
+      angular: {
+        exports: 'angular'
+      },
+      angularRoute: {
+        deps: ['angular']
+      },
+      ocLazyLoad: {
+        deps: ['angular']
+      }      
     }
 });
 
-require(['angular', 'angular-route', 'route-resolver','oc-lazy-load','app'], function () {
+
+require(['angular', 'angularRoute', 'routeResolver', 'ocLazyLoad', 'app'], function () {
 
     angular.bootstrap(document, ['App']);
 });

@@ -25,6 +25,7 @@
   "dependencies": {
     "angular-route": "~1.2.6",
     "requirejs": "~2.1.9",
-    "bootstrap": "~3.0.3"
+    "bootstrap": "~3.0.3",
+    "ocLazyLoad": "~0.2.0"
   }
 }
